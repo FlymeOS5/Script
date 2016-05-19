@@ -20,6 +20,7 @@
 export JOBS=`nproc`;
 
 #Install Package Which Google recommend
+sudo apt-get update
 sudo apt-get install -y git-core gnupg gcc-multilib g++-multilib \
 flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev \
 squashfs-tools build-essential zip curl libncurses5-dev \

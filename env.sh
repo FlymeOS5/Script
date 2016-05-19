@@ -21,6 +21,7 @@
 echo "开始配置系统环境......"
 echo "(1/6)安装必要依赖包......"
 #Install Package Which Google recommend
+sudo apt-get update
 sudo apt-get install -y git-core gnupg gcc-multilib g++-multilib \
 flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev \
 squashfs-tools build-essential zip curl libncurses5-dev \
