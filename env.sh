@@ -60,6 +60,7 @@ echo "(6/6)清除系统垃圾......"
 rm -Rf ~/adt-bundle/adt-bundle-linux-x86_64-20140702
 rm -f ~/adt-bundle/adt_x64.zip
 
+cd 
 echo "完成系统环境配置......"
 
 #Now Start to Sync Flyme Source

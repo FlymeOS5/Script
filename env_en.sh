@@ -54,6 +54,8 @@ source ~/.profile
 rm -Rf ~/adt-bundle/adt-bundle-linux-x86_64-20140702
 rm -f ~/adt-bundle/adt_x64.zip
 
+cd
+
 #Now Start to Sync Flyme Source
 
 mkdir flyme
