@@ -88,6 +88,8 @@ echo "3.无机适配情况下请将ROM包从CM官网下载并更名为ROM.zip，
 echo "若项目目录下存在ROM.zip则优先进行无机适配!"
 read
 flyme config
+echo "请检查Makefile文件是否需要修改"
+read
 flyme newproject
 flyme patchall
 cp -rf ../base_cm/SystemUI .
@@ -98,7 +100,6 @@ sed -i -e "s/persist\.sys\.usb\.config=.*/persist\.sys\.usb\.config=mtp\,adb/g" 
 sed -i 's/export\ BOOTCLASSPATH.*/&:\/system\/framework\/flyme-framework\.jar:\/system\/framework\/flyme-telephony-common\.jar:\/system\/framework\/meizu2_jcifs\.jar/g' boot.img.out/RAMDISK/init.environ.rc
 echo "Reject提示："
 echo "通常情况下为2个rej，boot.img.out中已经由系统自动解决"
-echo "请检查Makefile文件是否需要修改"
 read
 
 cd ../..

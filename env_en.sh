@@ -73,6 +73,8 @@ cd devices/$name
 echo "Plugin Your Devices!"
 read
 flyme config
+echo "Check Makefile then press Enter"
+read
 flyme newproject
 flyme patchall
 
@@ -84,7 +86,6 @@ sed -i -e "s/persist\.sys\.usb\.config=.*/persist\.sys\.usb\.config=mtp\,adb/g" 
 sed -i 's/export\ BOOTCLASSPATH.*/&:\/system\/framework\/flyme-framework\.jar:\/system\/framework\/flyme-telephony-common\.jar:\/system\/framework\/meizu2_jcifs\.jar/g' boot.img.out/RAMDISK/init.environ.rc
 
 echo "Auto fix 2 Reject in boot.img.out"
-echo "Check Makefile then press Enter"
 read
 
 cd ../..
